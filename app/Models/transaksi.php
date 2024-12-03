@@ -28,9 +28,9 @@ class transaksi extends Model
         return $this->belongsTo(lapangan::class);
     }
 
-    public function user()
+    public function customer()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
     
 
