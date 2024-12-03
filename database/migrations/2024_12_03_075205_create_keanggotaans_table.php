@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('hari');
             $table->time('jam_mulai');
             $table->time('jam_selesai');
+            $table->unsignedInteger('durasi_jam');
             $table->string('status');
             $table->timestamps();
         });

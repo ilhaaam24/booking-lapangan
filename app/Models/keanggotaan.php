@@ -9,5 +9,21 @@ class keanggotaan extends Model
 {
     use HasFactory;
 
-    protected $table = 'keanggotaan';
+    protected $fillable =[
+      'user_id',
+      'lapangan_id',
+      'tanggal_mulai',
+      'tanggal_selesai',
+      'hari',
+      'jam_mulai',
+      'jam_selesai',
+      'durasi_jam',
+      'status',  
+    ];
+
+
+    public function lapangan()
+    {
+        return $this->belongsTo(lapangan::class);
+    }
 }

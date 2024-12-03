@@ -17,4 +17,14 @@ class jadwal_lapangan extends Model
         'jam_selesai',
         'status',
     ];
+
+    public function lapangan()
+    {
+        return $this->belongsTo(lapangan::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

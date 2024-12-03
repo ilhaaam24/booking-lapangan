@@ -13,4 +13,9 @@ class lapangan_photo extends Model
         'lapangan_id',
         'photo',
     ];
+
+    public function lapangan()
+    {
+        return $this->belongsTo(lapangan::class);
+    }
 }

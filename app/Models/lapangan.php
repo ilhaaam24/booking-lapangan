@@ -16,4 +16,10 @@ class lapangan extends Model
         'harga_perjam',
         'Deskripsi'
     ];
+
+
+    public function kategori()
+    {
+        return $this->belongsTo(kategori::class);
+    }
 }
