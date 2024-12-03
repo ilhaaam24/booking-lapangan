@@ -33,4 +33,9 @@ class transaksi extends Model
         return $this->belongsTo(User::class);
     }
     
+
+    public function keanggotaan()
+    {
+        return $this->belongsTo(keanggotaan::class);
+    }
 }

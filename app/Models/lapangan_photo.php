@@ -18,4 +18,6 @@ class lapangan_photo extends Model
     {
         return $this->belongsTo(lapangan::class);
     }
+
+    
 }

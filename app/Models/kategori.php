@@ -13,4 +13,11 @@ class kategori extends Model
         'nama',
         'photo',
     ];
+
+
+
+    public function lapangan()
+    {
+        return $this->hasMany(lapangan::class);
+    }
 }

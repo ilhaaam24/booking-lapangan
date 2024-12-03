@@ -26,4 +26,14 @@ class keanggotaan extends Model
     {
         return $this->belongsTo(lapangan::class);
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function transaksi()
+    {
+        return $this->hasMany(transaksi::class);
+    }
 }

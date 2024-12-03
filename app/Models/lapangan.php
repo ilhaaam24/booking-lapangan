@@ -22,4 +22,19 @@ class lapangan extends Model
     {
         return $this->belongsTo(kategori::class);
     }
+
+
+    public function jadwal_lapangan()
+    {
+        return $this->hasMany(jadwal_lapangan::class);
+    }
+
+    public function lapangan_photo()
+    {
+        return $this->hasMany(lapangan_photo::class);
+    }
+
+    public function ulasan(){
+        return $this->hasMany(ulasan::class);
+    }
 }
