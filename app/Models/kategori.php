@@ -11,7 +11,8 @@ class kategori extends Model
 
     protected $fillable = [
         'nama',
-        'photo'
+        'photo',
+        'slug',
     ];
 
     public function lapangan()
